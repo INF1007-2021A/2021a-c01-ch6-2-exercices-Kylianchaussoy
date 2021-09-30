@@ -33,10 +33,9 @@ def compute_mse(model_dict: dict) -> dict:
         somme = 0
         for i in valeurs:
             somme += (i[1]-i[0])**2
-        mse = somme/len(i)
+        mse = somme/len(valeurs)
         dico[modele_ia] = mse
     return dico
-
 
 def main() -> None:
     some_list = ["a", "b", "z", "patate"]
